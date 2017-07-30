@@ -1,4 +1,4 @@
-FROM chayakornlpru/trsys 
+FROM chayakornlpru/LpruSys 
 MAINTAINER whitecat.chayakorn@gmail.com
 RUN  apt-get update && apt-get install -y nginx   
 RUN  add-apt-repository -y -u ppa:ondrej/php && apt-get update
