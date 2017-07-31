@@ -92,11 +92,4 @@ RUN set -xe; \
 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps
 	apt-get install -y php 7.1
 
-RUN echo 'root:root' |chpasswd
-
-RUN sed -ri 's/^PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config && \
-	sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config
-
-RUN mkdir -p /var/run/sshd
-	
-EXPOSE 22
+expose 8080
