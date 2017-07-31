@@ -3,7 +3,7 @@ MAINTAINER whitecat.chayakorn@gmail.com
 RUN apt-get update && \
 	apt-get install -y openssh-server && \
 	apt-get update && \
-	apt-get install nginx &&\
+	apt-get install -y nginx &&\
 	rm -rf /var/lib/apt/lists/* && \
 	apt-get clean
 
