@@ -1,7 +1,9 @@
-FROM chayakornlpru/LpruSys 
+FROM ubuntu:lastest
 MAINTAINER whitecat.chayakorn@gmail.com
 RUN apt-get update && \
 	apt-get install -y openssh-server && \
+	apt-get update && \
+	apt-get install nginx &&\
 	rm -rf /var/lib/apt/lists/* && \
 	apt-get clean
 
