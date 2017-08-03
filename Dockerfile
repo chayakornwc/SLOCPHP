@@ -1,7 +1,7 @@
 FROM ubuntu
 MAINTAINER whitecat.chayakorn@gmail.com
 RUN apt-get update && \
-	apt-get install -y openssh-server && \
+	apt-get install -y openssh-server software-properties-common && \
 	apt-get update && \
 	apt-get install -y nginx && \
 	add-apt-repository -y -u ppa:ondrej/php && \
