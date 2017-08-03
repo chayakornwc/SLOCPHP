@@ -6,4 +6,4 @@ RUN apt-get update && \
 	apt-get install -y nginx && \
 	add-apt-repository -y -u ppa:ondrej/php && \
 	apt-get update && \
-	apt-get install -y php7.1-fpm &&\
+	apt-get install -y php7.1-fpm 
