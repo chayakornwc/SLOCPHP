@@ -5,4 +5,4 @@ RUN apt-get update && \
 	apt-get update && \
 	apt-get install -y nginx 
 	apt-get update && \
-	apt-get install -y php:7.1-fpm
+	apt-get install -y php7.1-fpm
