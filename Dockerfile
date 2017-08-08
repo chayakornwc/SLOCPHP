@@ -1,8 +1,11 @@
 FROM ubuntu:lastest				
 MAINTAINER whitecat.chayakorn@gmail.com
-ive
+
 RUN apt-get update && \
 	apt-get install -y openssh-server && \
 	 apt-get  update &&\
-	 apt-get install -y  nginx
+	 apt-get install -y  nginx &&\
+	 apt-get update &&\
+	 apt-get install php7 php7.1-fpm 
+	 
 	
