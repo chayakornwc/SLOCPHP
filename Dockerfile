@@ -1,4 +1,4 @@
-FROM ubuntu:lastest				
+FROM ubuntu:latest				
 MAINTAINER whitecat.chayakorn@gmail.com
 
 RUN apt-get update && \
