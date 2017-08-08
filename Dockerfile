@@ -4,7 +4,7 @@ MAINTAINER whitecat.chayakorn@gmail.com
 RUN apt-get update && \
 	apt-get install -y openssh-server && \
 	 apt-get  update &&\
-	 apt-get install -y  nginx &&
+	 apt-get install -y  nginx &&\
 	 apt-get install -y software-properties-common python-software-properties
 RUN	add-apt-repository ppa:ondrej/php  && \
 	apt-get update	 
