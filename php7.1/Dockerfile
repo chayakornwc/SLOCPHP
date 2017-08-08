@@ -1,4 +1,4 @@
-FROM chayakornwc/LprutrSys:ubuntu-16
+FROM chayakornlpru/lprutrsys:ubuntu-16
 ENV PHPIZE_DEPS \
 		autoconf \
 		dpkg-dev \
